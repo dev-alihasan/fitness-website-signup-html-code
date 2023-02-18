@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: linear-gradient(
+    to right top,
+    #a3a3ff,
+    #d5b0f4,
+    #f1c4ec,
+    #fedbec,
+    #fff6f8
+  );
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+}
+.container {
+  display: flex;
+  width: 1100px;
+  height: 100%;
+  margin: 20px auto;
+}
+.signup-thumb {
+  display: flex;
+  width: 500px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 866px;
+  padding: 30px 60px;
+  background-image: radial-gradient(
+    circle,
+    #ffebfe,
+    #fceeff,
+    #faf1fe,
+    #f8f4fe,
+    #f8f6fc,
+    #f8f6fc,
+    #f8f6fc,
+    #f8f6fc,
+    #f8f4fe,
+    #faf1fe,
+    #fceeff,
+    #ffebfe
+  );
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.signup-form .form-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.signup-form .form-header .logo {
+  display: flex;
+  align-items: center;
+  color: #7d4830;
+  text-decoration: none;
+}
+
+.signup-form .form-header .sign-in {
+  margin-left: auto;
+  color: #767272;
+  font-size: 14px;
+}
+.signup-form .form-header .sign-in a {
+  margin-left: 3px;
+  color: #901b65;
+  text-decoration: underline;
+}
+.signup-form h1 {
+  font-size: 54px;
+  font-weight: 900;
+  color: #901b65;
+}
+.signup-form p {
+  font-size: 25px;
+  color: #7d4830;
+}
+.signup-form .form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.signup-form .form .form-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.signup-form .form .form-group-item {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 25px;
+}
+.signup-form .form .form-group-item label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #767272;
+  margin-bottom: 7px;
+}
+.signup-form .form .form-group-item:focus-within label {
+  color: #901b65;
+}
+.signup-form .form .form-group-item input {
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px solid #767272;
+  border-radius: 10px;
+  outline: 0;
+  transition: ease-out 200ms;
+}
+.container
+  .signup-form
+  .form
+  .form-group-item
+  input::-webkit-input-placeholder {
+  font-size: 13px;
+}
+
+.signup-form .form .terms {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 25px;
+}
+.signup-form .form .terms input {
+  display: none;
+}
+.signup-form .form .terms input + *::before {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+  border: 2px solid #767272;
+  transition: ease-out 200ms;
+  cursor: pointer;
+  margin-right: 10px;
+  font-style: normal;
+}
+.signup-form .form .terms input:checked + * {
+  color: #901b65;
+}
+.signup-form .form .terms input:checked + *::before {
+  text-align: center;
+  border-color: #901b65;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.2em;
+}
+.signup-form .form .terms label {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.signup-form .form .terms label a {
+  color: #901b65;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+a.my-button {
+  background-color: #fceeff;
+  color: #000000;
+  font-family: Trebuchet MS;
+  font-size: 16px;
+  font-weight: 800;
+  font-style: normal;
+  text-decoration: none;
+  padding: 14px 15px;
+  border: 0px solid #000;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0px 0px 10px 0px
+    rgba(77.197265625, 77.197265625, 77.197265625, 0.5);
+}
+a.my-button:hover {
+  background-color: #efe2f2;
+}
+a.my-button:active {
+  transform: scale(0.95);
+}
